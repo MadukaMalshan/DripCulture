@@ -176,15 +176,9 @@ header {
     color: var(--text-main);
 }
 
-/* Brand Story Inline Logo */
-#story p img {
-    height: 1.2em;
-    width: auto;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-    margin-top: -3px;
-    /* visual correction */
+.nav-links {
+    display: flex;
+    gap: 40px;
 }
 
 .nav-links a {
