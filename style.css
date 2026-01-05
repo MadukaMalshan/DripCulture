@@ -165,6 +165,12 @@ nav {
     gap: 15px;
     text-decoration: none;
     flex-shrink: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .logo img {

@@ -48,6 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 target.scrollIntoView({
                     behavior: 'smooth'
                 });
+            } else if (this.getAttribute('href') === '#') {
+                // Logo click - scroll to top
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
             }
             // Close mobile menu if open
             navLinks.classList.remove('active');
