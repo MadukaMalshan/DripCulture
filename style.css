@@ -176,9 +176,15 @@ header {
     color: var(--text-main);
 }
 
-.nav-links {
-    display: flex;
-    gap: 40px;
+/* Brand Story Inline Logo */
+#story p img {
+    height: 1.2em;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -3px;
+    /* visual correction */
 }
 
 .nav-links a {
@@ -354,10 +360,27 @@ footer {
 }
 
 .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+.footer-logo img {
+    height: 60px;
+    /* Slightly larger in footer */
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-logo span {
     font-family: var(--font-heading);
     font-size: 2.5rem;
-    margin-bottom: 25px;
+    font-weight: 700;
     color: var(--text-muted);
+    letter-spacing: -1px;
 }
 
 .socials {
