@@ -397,20 +397,25 @@ footer {
 .socials {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .socials a {
-    padding: 10px;
+    padding: 10px 20px;
     border: 1px solid var(--border-color);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
+    border-radius: 5px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--text-muted);
+    white-space: nowrap;
 }
 
 .socials a:hover {
@@ -627,13 +632,13 @@ footer {
     }
 
     .socials {
-        gap: 20px;
+        gap: 15px;
         margin-bottom: 30px;
     }
 
     .socials a {
-        width: 35px;
-        height: 35px;
+        padding: 8px 16px;
+        font-size: 0.8rem;
     }
 }
 
